@@ -1,3 +1,4 @@
+// variables outside of a function is called a global scope 
 
 const defaultResult = 0;
 let result = defaultResult;
@@ -10,6 +11,12 @@ let calculationDescription = '(' + defaultResult + ' + 10) * 3 / 2 - 1';
 
 outputResult(result, calculationDescription);
 
-function add(num1, num2) {
+// a function is a statement 
 
-}
+function add(num1, num2) {
+  const totalResult = num1 + num2;
+  alert('The result is ' + totalResult);
+} 
+
+add(1, 3);
+add(3, 6);
