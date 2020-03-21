@@ -15,8 +15,7 @@ outputResult(result, calculationDescription);
 
 function add(num1, num2) {
   const totalResult = num1 + num2;
-  alert('The result is ' + totalResult);
+  return result;
 } 
 
-add(1, 3);
-add(3, 6);
+result = add(3, 5);
