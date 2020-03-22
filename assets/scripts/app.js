@@ -1,21 +1,18 @@
-// variables outside of a function is called a global scope 
+
+// a variable outside of a function is called a global scope - a variable inside a function is called a local scope  
+
+// back ticks `...` work as strings, they give you access to a specific syntax ${} ... to get a value you have to use ${insert your variable name here or an equation itself ...(e.g - ${1+1})
 
 const defaultResult = 0;
 let result = defaultResult;
 
-result = (result + 10) * 3 / 2 - 1;
-
-let calculationDescription = '(' + defaultResult + ' + 10) * 3 / 2 - 1';
-
-// back ticks `...` work as strings, they give you access to a specific syntax ${} ... to get a value you have to use ${insert your variable name here or an equation itself ...(e.g - ${1+1})
-
-outputResult(result, calculationDescription);
-
 // a function is a statement 
-
-function add(num1, num2) {
-  const totalResult = num1 + num2;
-  return result;
+function add() {
+  result = result + userInput.value;
+  outputResult(result, '');
 } 
 
-result = add(3, 5);
+addBtn.addEventListener('click', add);
+
+
+
