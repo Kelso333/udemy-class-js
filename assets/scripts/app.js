@@ -7,12 +7,14 @@ const defaultResult = 0;
 let result = defaultResult;
 
 // a function is a statement 
+
 function add() {
   result = result + userInput.value;
   outputResult(result, '');
 } 
 
 addBtn.addEventListener('click', add);
+
 
 
 
