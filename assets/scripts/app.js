@@ -8,9 +8,14 @@ let currentResult = defaultResult;
 
 // a function is a statement 
 
+function getUserNumberInput() {
+  return parseInt(usrInput.value);
+}
+
 function add() {
-  const calcDescription = `${currentResult} + ${userInput.value}`
-  currentResult = currentResult + parseInt(userInput.value);
+  const enteredNumber = getUserNumberInput();
+  const calcDescription = `${currentResult} + ${enteredNumber}`
+  currentResult = currentResult + enteredNumber;
   outputResult(currentResult, calcDescription);
 } 
 
